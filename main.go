@@ -372,10 +372,10 @@ func main() {
 		fioBenchmarkFlags = "--name=rootfs --status-interval=30 --numjobs=32 --ioengine=libaio --direct=1 --bs=4k --iodepth=32 --readwrite=randread --directory=/ --size=1G --runtime=60 --time_based --filename=/fly-fio"
         case "data":
 		fioBenchmarkFlags = "--name=data --status-interval=30 --numjobs=32 --ioengine=libaio --direct=1 --bs=4k --iodepth=32 --readwrite=randread --directory=/data --size=1G --runtime=60 --time_based --filename=/data/fly-fio"
-        case "rootfsro":
-		fioBenchmarkFlags = "--name=rootfsro --status-interval=30 --numjobs=32 --ioengine=libaio --direct=1 --bs=4k --iodepth=32 --readwrite=read --directory=/ --size=1G --runtime=60 --time_based --filename=/fly-fio"
-        case "dataro":
-		fioBenchmarkFlags = "--name=dataro --status-interval=30 --numjobs=32 --ioengine=libaio --direct=1 --bs=4k --iodepth=32 --readwrite=read --directory=/data --size=1G --runtime=60 --time_based --filename=/data/fly-fio"
+        case "rootfs-ro":
+		fioBenchmarkFlags = "--name=rootfs-ro --status-interval=30 --numjobs=32 --ioengine=libaio --direct=1 --bs=4k --iodepth=32 --readwrite=read --directory=/ --size=1G --runtime=60 --time_based --filename=/fly-fio"
+        case "data-ro":
+		fioBenchmarkFlags = "--name=data-ro --status-interval=30 --numjobs=32 --ioengine=libaio --direct=1 --bs=4k --iodepth=32 --readwrite=read --directory=/data --size=1G --runtime=60 --time_based --filename=/data/fly-fio"
 	case "custom":
 		break
 	default:
