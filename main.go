@@ -377,7 +377,7 @@ func main() {
         case "data-ro":
 		fioBenchmarkFlags = "--name=data-ro --status-interval=30 --numjobs=32 --ioengine=libaio --direct=1 --bs=4k --iodepth=32 --readwrite=read --directory=/data --size=1G --runtime=60 --time_based --filename=ly-fio"
         case "data-big":
-		fioBenchmarkFlags = "--name=data --status-interval=30 --numjobs=2 --ioengine=libaio --direct=1 --bs=4k --iodepth=64 --readwrite=randread --directory=/data --size=50G --runtime=600 --time_based --filename=fly-fio"
+		fioBenchmarkFlags = "--name=data --status-interval=30 --numjobs=32 --ioengine=libaio --direct=1 --bs=4k --iodepth=64 --readwrite=randread --directory=/data --size=50G --runtime=600 --time_based --filename=fly-fio"
 	case "custom":
 		break
 	default:
